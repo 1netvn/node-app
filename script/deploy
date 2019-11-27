@@ -1,8 +1,7 @@
 #!/bin/sh
-ssh -o StrictHostKeyChecking=no macpro@34.92.85.215 <<EOF
+ssh macpro@34.92.85.215 <<EOF
  cd ~/node-app
- #git pull
- #npm install
+
  pm2 restart all
  exit
 EOF
