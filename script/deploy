@@ -1,5 +1,5 @@
 #!/bin/sh
-ssh macpro@34.92.85.215 <<EOF
+ssh -o StrictHostKeyChecking=no macpro@34.92.85.215 <<EOF
  cd ~/node-app
  git pull
  npm install
