@@ -1,7 +1,8 @@
 #!/bin/sh
 ssh macpro@34.92.85.215 <<EOF
  cd ~/node-app
-
+ git pull
+ npm install
  pm2 restart all
  exit
 EOF
